@@ -1,0 +1,40 @@
+{
+   "abstract" : "Avoid running under CPAN Testers",
+   "author" : [
+      "Chris Williams <chris@bingosnet.co.uk>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.101612, CPAN::Meta::Converter version 2.101600",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Dist-Zilla-Plugin-NoAutomatedTesting",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.31"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dist::Zilla" : "4.101582",
+            "perl" : "5.008005"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "homepage" : "http://github.com/bingos/dist-zilla-plugin-noautomatedtesting/tree",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/bingos/dist-zilla-plugin-noautomatedtesting.git",
+         "web" : "http://github.com/bingos/dist-zilla-plugin-noautomatedtesting/tree"
+      }
+   },
+   "version" : "0.02"
+}
+
