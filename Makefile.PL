@@ -2,29 +2,29 @@
 use strict;
 use warnings;
 
- BEGIN { require 5.008005; } 
+use 5.008005;
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Avoid running under CPAN Testers',
-  'AUTHOR' => 'Chris Williams <chris@bingosnet.co.uk>',
-  'BUILD_REQUIRES' => {},
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "ABSTRACT" => "Avoid running under CPAN Testers",
+  "AUTHOR" => "Chris Williams <chris\@bingosnet.co.uk>",
+  "BUILD_REQUIRES" => {},
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Dist-Zilla-Plugin-NoAutomatedTesting',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Dist::Zilla::Plugin::NoAutomatedTesting',
-  'PREREQ_PM' => {
-    'Dist::Zilla' => '4.101582'
+  "DISTNAME" => "Dist-Zilla-Plugin-NoAutomatedTesting",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Dist::Zilla::Plugin::NoAutomatedTesting",
+  "PREREQ_PM" => {
+    "Dist::Zilla" => "4.101582"
   },
-  'VERSION' => '0.02',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.04",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

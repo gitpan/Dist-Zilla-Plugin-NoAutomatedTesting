@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::NoAutomatedTesting;
-BEGIN {
-  $Dist::Zilla::Plugin::NoAutomatedTesting::VERSION = '0.02';
+{
+  $Dist::Zilla::Plugin::NoAutomatedTesting::VERSION = '0.04';
 }
 
 # ABSTRACT: Avoid running under CPAN Testers
@@ -24,9 +24,15 @@ no Moose;
 
 __END__
 
+=pod
+
 =head1 NAME
 
 Dist::Zilla::Plugin::NoAutomatedTesting - Avoid running under CPAN Testers
+
+=head1 VERSION
+
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -60,20 +66,25 @@ Required by L<Dist::Zilla::Role::InstallTool>.
 
 =back
 
-=head1 AUTHOR
+=head1 NAME
 
-Chris C<BinGOs> Williams
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
+Dist::Zilla::Plugin::NoAutomatedTesting - Avoid running under CPAN Testers
 
 =head1 SEE ALSO
 
 L<Dist::Zilla>
 
 L<http://wiki.cpantesters.org/>
+
+=head1 AUTHOR
+
+Chris Williams <chris@bingosnet.co.uk>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Chris Williams.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

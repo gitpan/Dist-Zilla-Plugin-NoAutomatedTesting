@@ -4,9 +4,9 @@ author:
   - 'Chris Williams <chris@bingosnet.co.uk>'
 build_requires: {}
 configure_requires:
-  ExtUtils::MakeMaker: 6.31
+  ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.101612, CPAN::Meta::Converter version 2.101600'
+generated_by: 'Dist::Zilla version 4.300030, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -16,6 +16,6 @@ requires:
   Dist::Zilla: 4.101582
   perl: 5.008005
 resources:
-  homepage: http://github.com/bingos/dist-zilla-plugin-noautomatedtesting/tree
-  repository: git://github.com/bingos/dist-zilla-plugin-noautomatedtesting.git
-version: 0.02
+  homepage: https://github.com/bingos/dist-zilla-plugin-noautomatedtesting
+  repository: https://github.com/bingos/dist-zilla-plugin-noautomatedtesting.git
+version: 0.04

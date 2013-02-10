@@ -4,7 +4,7 @@
       "Chris Williams <chris@bingosnet.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.101612, CPAN::Meta::Converter version 2.101600",
+   "generated_by" : "Dist::Zilla version 4.300030, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -16,7 +16,14 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.31"
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Pod::Coverage::TrustPod" : "0",
+            "Test::Pod" : "1.41",
+            "Test::Pod::Coverage" : "1.08"
          }
       },
       "runtime" : {
@@ -28,13 +35,13 @@
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://github.com/bingos/dist-zilla-plugin-noautomatedtesting/tree",
+      "homepage" : "https://github.com/bingos/dist-zilla-plugin-noautomatedtesting",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/bingos/dist-zilla-plugin-noautomatedtesting.git",
-         "web" : "http://github.com/bingos/dist-zilla-plugin-noautomatedtesting/tree"
+         "url" : "https://github.com/bingos/dist-zilla-plugin-noautomatedtesting.git",
+         "web" : "https://github.com/bingos/dist-zilla-plugin-noautomatedtesting"
       }
    },
-   "version" : "0.02"
+   "version" : "0.04"
 }
 
