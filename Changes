@@ -1,6 +1,33 @@
 ==================================================
-Changes from 2008-02-12 00:00:00 +0000 to present.
+Changes from 2008-05-26 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 0.06 at 2013-05-25 11:31:41 +0000
+-----------------------------------------
+
+  Change: 6c76c8fed014c6ee2e71d51893565d66c541661e
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-05-25 12:31:41 +0000
+
+    Bump to version 0.06 
+
+  Change: 8267199b285708eff8817fd2d4602038067370c9
+  Author: Chris Williams <chris@bingosnet.co.uk>
+  Date : 2013-05-25 04:30:15 +0000
+
+    Merge pull request #1 from karenetheridge/patch-1
+
+    die if plugin order results in a no-op 
+
+  Change: 06f9454752f6f232c83026878ad9a76f51979451
+  Author: Karen Etheridge <ether@cpan.org>
+  Date : 2013-05-24 16:11:38 +0000
+
+    die if plugin order results in a no-op
+
+    The user might not notice the plugin order is wrong... this way
+    they're sure to notice. 
 
 -----------------------------------------
 version 0.04 at 2013-02-10 20:20:50 +0000

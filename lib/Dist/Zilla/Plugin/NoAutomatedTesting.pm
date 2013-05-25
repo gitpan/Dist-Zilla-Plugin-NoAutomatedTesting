@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::NoAutomatedTesting;
 {
-  $Dist::Zilla::Plugin::NoAutomatedTesting::VERSION = '0.04';
+  $Dist::Zilla::Plugin::NoAutomatedTesting::VERSION = '0.06';
 }
 
 # ABSTRACT: Avoid running under CPAN Testers
@@ -11,7 +11,10 @@ with 'Dist::Zilla::Role::InstallTool';
 sub setup_installer {
   my $self = shift;
   my ($mfpl) = grep { $_->name eq 'Makefile.PL' } @{ $self->zilla->files };
-  return unless $mfpl;
+  
+  $self->log_fatal('No Makefile.PL was found. [NoAutomatedTesting] should appear in dist.ini after [MakeMaker]!')
+    unless $mfpl;
+
   my $content = 'exit 0 if $ENV{AUTOMATED_TESTING};' . "\n";
   $mfpl->content( $content . $mfpl->content );
   return;
@@ -32,7 +35,7 @@ Dist::Zilla::Plugin::NoAutomatedTesting - Avoid running under CPAN Testers
 
 =head1 VERSION
 
-version 0.04
+version 0.06
 
 =head1 SYNOPSIS
 
