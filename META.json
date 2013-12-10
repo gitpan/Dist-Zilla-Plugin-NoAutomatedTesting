@@ -4,7 +4,7 @@
       "Chris Williams <chris@bingosnet.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.130880",
+   "generated_by" : "Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.133380",
    "license" : [
       "perl_5"
    ],
@@ -31,6 +31,14 @@
             "Dist::Zilla" : "4.101582",
             "perl" : "5.008005"
          }
+      },
+      "test" : {
+         "requires" : {
+            "File::Spec" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
+            "Test::More" : "0"
+         }
       }
    },
    "release_status" : "stable",
@@ -42,6 +50,6 @@
          "web" : "https://github.com/bingos/dist-zilla-plugin-noautomatedtesting"
       }
    },
-   "version" : "0.06"
+   "version" : "0.08"
 }
 

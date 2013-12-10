@@ -3,7 +3,7 @@ NAME
     Testers
 
 VERSION
-    version 0.06
+    version 0.08
 
 SYNOPSIS
       # In dist.ini - It is important that NoAutomatedTesting follows MakeMaker
